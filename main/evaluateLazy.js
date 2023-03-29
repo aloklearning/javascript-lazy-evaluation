@@ -47,14 +47,13 @@ class Lazy {
     }
 }
 
-// NOTE: If you want to just test the code from here, please uncomment
-// the below code, and test it as per your convenience. 
-// const compute = new Lazy();
-// const finalEvaluedResults = 
-// compute.add(function twoTimes(a) { return a * 2})
-// .add(function addItems(a, b) { return a + b}, 1)
-// .evaluate([1,2,3])
+const compute = new Lazy();
 
-// console.log(finalEvaluedResults);
+const finalEvaluedResults = 
+compute.add(function twoTimes(a) { return a * 2})
+.add(function addItems(a, b) { return a + b}, 1)
+.evaluate([1, 2, 3]);
+
+console.log(finalEvaluedResults);
 
 module.exports = Lazy;
