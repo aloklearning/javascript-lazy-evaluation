@@ -54,7 +54,7 @@ const compute = new Lazy();
 
 const finalEvaluedResults = 
 compute.add(function twoTimes(a) { return a * 2 })
-.add(function addItems(a, b, c) { return a + b }, 1)
+.add(function addItems(a, b) { return a + b }, 1)
 .evaluate([1, 2, 3]);
 
 console.log(finalEvaluedResults);
