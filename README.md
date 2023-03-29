@@ -71,30 +71,15 @@ Ran all test suites.
 ### Assumptions
 
 - `target` argument will always be an array and cannot be provided as number/integer to `evaluate`. As the statement in the project guideline mentioned it clearly: When the function is called it will be called with the remaining arguments supplied to add (if any) followed by a single argument that will be an item from the **target array supplied to evaluate**.
-- The function passed as an argument to `add()` will have **atmost two arguments required only** because of the following pointers:
 
-  - _When the function is called it will be called with the remaining arguments supplied to add (if any) followed by a **single argument** that will be an item from the target array supplied to evaluate._
+- There is no need of handling the edge cases ofr `evaluate` and `add()` args, following the documents statement: _Don't be defensive about the degenerate cases (E.g. bad / missing arguments)_.
 
-    - Considering this statement, one argument will be this **argument picked from target array**, and **another one is being used while doing the computation of the evaluate value via the add functions** for better computation. And in case a third item argument will be required in the function, I struggled to find out an information regarding the same in the argument passing instruction mentioned.
-
-    ```javascript
-    compute.add(function fn(a, b) { return a + b }, 3).evaluate([2, 3]);
-
-    // This can computed as in the first iteration
-    fn(1, 1) { return 2 + 3 } // results in 5
-    ```
-
-- **[Mentioned in the problem document]** add was called at least once (I.e. don't account for the case where the Lazy instance had no functions added to it).
-- The `add()` functional first argument will alwasy receive the single constant argument provided in the `add()` _(the below code example gave the assumptions source)_
+- **[Mentioned in the problem document]** `add` was called at least once (I.e. don't account for the case where the Lazy instance had no functions added to it).
+- The `add()` functional arguments will alwasy receive the integer/number constant arguments for the first nth arguments provided in the `add()` followed by the `evaluation` constant value picked from the argument`target` _(the below code example gave the assumptions source)_
 
 ```javascript
 add(plus(a, b) { return a + b; }, 1) // a plus function that will be given 1 as its first argument
 ```
-
-### Edge Case Handling
-
-- For an empty or undefined argument in `evaluate`, the program will throw an error message, mentioning the what went wrong.
-- This is also tested in the test suite.
 
 ### Links
 

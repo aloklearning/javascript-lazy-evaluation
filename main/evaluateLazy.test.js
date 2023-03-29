@@ -11,6 +11,18 @@ describe('Lazy', () => {
         expect(finalResults instanceof Array).toBe(true);
     });
 
+    test('returns an array for an arbitrary number of arguments', () => {
+        const compute = new Lazy();
+        const finalResults =
+            compute.add(function twoTimes(a) { return a * 2 })
+            .add(function plus(a, b) { return a + b }, 1)
+            .add(function multiplyThreeItems(a, b, c) { return a * b * c }, 4, 5)
+            .evaluate([2]);
+
+        expect(finalResults.length).toBe(1);
+        expect(finalResults).toStrictEqual([100])
+    });
+
     test('returns [3,5,7] for plus and twoTimes add functions with length 3', () => {
         const compute = new Lazy();
         const finalResults = 
@@ -42,26 +54,3 @@ describe('Lazy', () => {
         expect(finalResults).toStrictEqual([2]);
     });
 });
-
-
-describe('Lazy Failure', () => {
-    test('returns an error message when no argument is passed in evaluate', () => {
-        const compute = new Lazy();
-        const finalResults = 
-        compute.add(Math.sqrt)
-        .evaluate();
-
-        expect(finalResults).toStrictEqual('Invalid evaluate argument.' 
-        + ' Please provide of an array of number and try again');
-    });
-
-    test('returns an error message when an empty array is passed in evaluate', () => {
-        const compute = new Lazy();
-        const finalResults = 
-        compute.add(Math.sqrt)
-        .evaluate([]);
-
-        expect(finalResults).toStrictEqual('Invalid evaluate argument.' 
-        + ' Please provide of an array of number and try again');
-    });
-})
