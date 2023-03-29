@@ -18,40 +18,23 @@ class Lazy {
         let evaluatedResults = [];
 
         // target can be a non-array item as well
-        if(target instanceof Array){
-            target.forEach(evalItem => {
-                let resultPerOperation = evalItem;
-    
-                this.functionalArgs.forEach(functionItems => {
-                    const myFunction = functionItems[0];
-        
-                    if(functionItems.length > 1) {
-                        resultPerOperation = myFunction(functionItems[1], resultPerOperation);
-                        return;
-                    }
-        
-                    resultPerOperation = myFunction(resultPerOperation);
-                });
-    
-                // Finally adding the outcome of the operation
-                evaluatedResults.push(resultPerOperation);
-            });
-        }else {
-            let resultPerOperation = target;
+        target.forEach(evalItem => {
+            let resultPerOperation = evalItem;
+
             this.functionalArgs.forEach(functionItems => {
                 const myFunction = functionItems[0];
-
+    
                 if(functionItems.length > 1) {
                     resultPerOperation = myFunction(functionItems[1], resultPerOperation);
                     return;
                 }
-
+    
                 resultPerOperation = myFunction(resultPerOperation);
             });
 
             // Finally adding the outcome of the operation
             evaluatedResults.push(resultPerOperation);
-        }
+        });
 
 
         // This approach is much cleaner then using console.log()
