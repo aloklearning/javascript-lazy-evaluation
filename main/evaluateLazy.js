@@ -14,7 +14,11 @@ class Lazy {
     }
 
     // This evalates all the methods in the add, and returns a final array
-    evaluate(target) {    
+    evaluate(target) {   
+        if(target === undefined || target.length === 0) {
+            return 'Invalid evaluate argument. Please provide of an array of number and try again';
+        } 
+
         let evaluatedResults = [];
 
         // target can be a non-array item as well

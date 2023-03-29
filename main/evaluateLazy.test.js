@@ -42,3 +42,26 @@ describe('Lazy', () => {
         expect(finalResults).toStrictEqual([2]);
     });
 });
+
+
+describe('Lazy Failure', () => {
+    test('returns an error message when no argument is passed in evaluate', () => {
+        const compute = new Lazy();
+        const finalResults = 
+        compute.add(Math.sqrt)
+        .evaluate();
+
+        expect(finalResults).toStrictEqual('Invalid evaluate argument.' 
+        + ' Please provide of an array of number and try again');
+    });
+
+    test('returns an error message when an empty array is passed in evaluate', () => {
+        const compute = new Lazy();
+        const finalResults = 
+        compute.add(Math.sqrt)
+        .evaluate([]);
+
+        expect(finalResults).toStrictEqual('Invalid evaluate argument.' 
+        + ' Please provide of an array of number and try again');
+    });
+})
