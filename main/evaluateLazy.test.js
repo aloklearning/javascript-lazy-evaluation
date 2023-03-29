@@ -26,7 +26,7 @@ describe('Lazy', () => {
     test('returns [3,5,7] for plus and twoTimes add functions with length 3', () => {
         const compute = new Lazy();
         const finalResults = 
-        compute.add(function twoTimes(a) { return a * 2})
+        compute.add(function twoTimes(a) { return a * 2 })
         .add(function plus(a, b) { return a + b }, 1)
         .evaluate([1, 2, 3]);
 
@@ -37,7 +37,7 @@ describe('Lazy', () => {
     test('returns [6, 15] for minus and threeTimes add functions with length 2', () => {
         const compute = new Lazy();
         const finalResults = 
-        compute.add(function threeTimes(a) { return a * 3})
+        compute.add(function threeTimes(a) { return a * 3 })
         .add(function minus(a, b) { return Math.abs(a - b) }, 6)
         .evaluate([3, 6]);
 
