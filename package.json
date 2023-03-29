@@ -1,0 +1,14 @@
+{
+  "name": "alok-kumar-yld-se-submission",
+  "version": "1.0.0",
+  "description": "This program handles the lazy evaluation algorithm",
+  "main": "evaluateLazy.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Alok Kumar (alokk830@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
