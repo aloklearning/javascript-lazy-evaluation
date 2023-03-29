@@ -16,6 +16,7 @@
 - [x] The solution is not a copy-paste from [Google](https://google.com/).
 - [x] `.git` folder has been added to the project, along with commits being added which can be found via typing `git log -a` in the terminal.
 - [x] The project has not been published to any `GitHub` repo.
+- [x] Add the `README.md` file and write code documentation that could add value to it.
 
 ### Built With
 
