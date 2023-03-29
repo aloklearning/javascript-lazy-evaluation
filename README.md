@@ -15,6 +15,7 @@
 - [x] The `Lazy` algorithm code is well tested with all the test cases mentioned in the test file.
 - [x] The solution is not a copy-paste from [Google](https://google.com/).
 - [x] `.git` folder has been added to the project, along with commits being added which can be found via typing `git log -a` in the terminal.
+- [x] The project has not been published to any `GitHub` repo.
 
 ### Built With
 
