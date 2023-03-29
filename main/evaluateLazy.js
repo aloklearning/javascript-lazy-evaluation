@@ -15,9 +15,10 @@ class Lazy {
 
     // This evalates all the methods in the add, and returns a final array
     evaluate(target) {   
-        if(target === undefined || target.length === 0) {
-            return 'Invalid evaluate argument. Please provide of an array of number and try again';
-        } 
+        // Commented. Bring back once we want to do the argument null safety check
+        // if(target === undefined || target.length === 0) {
+        //     return 'Invalid evaluate argument. Please provide of an array of number and try again';
+        // } 
 
         let evaluatedResults = [];
 
