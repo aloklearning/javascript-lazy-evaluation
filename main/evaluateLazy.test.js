@@ -11,7 +11,7 @@ describe('Lazy', () => {
         expect(finalResults instanceof Array).toBe(true);
     });
 
-    test('returns an array for an arbitrary number of arguments', () => {
+    test('returns an array for an arbitrary number of arguments with length 1', () => {
         const compute = new Lazy();
         const finalResults =
             compute.add(function twoTimes(a) { return a * 2 })
