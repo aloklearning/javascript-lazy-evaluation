@@ -1,22 +1,11 @@
 ## Lazy Evaluation
 
+[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-ffff00.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![build](https://img.shields.io/appveyor/build/gruntjs/grunt)](https://pub.dev/packages/flutter_bounce#-analysis-tab-)
+
 - This coding challenge solves a very interesting algorithmic problem known as **Lazy Evaluation**.
 - Lazy evaluation is an evaluation strategy which delays the evaluation of an expression until its value is needed.
-
-### Checklists
-
-- [x] Constructor. Creates a new instance of a Lazy which models a lazy computation.
-- [x] The add function can receive an arbitrary number of arguments.
-- [x] You should be able to chain together calls to `add` and `evaluate`.
-- [x] Don't be defensive about the degenerate cases (E.g. bad / missing arguments).
-- [x] `evaluate` returns an array containing the result of applying the chain of functions to the
-      array target.
-- [x] In `evaluate` the functions should be applied in the order they were added to the `Lazy` instance.
-- [x] The `Lazy` algorithm code is well tested with all the test cases mentioned in the test file.
-- [x] The solution is not a copy-paste from [Google](https://google.com/).
-- [x] `.git` folder has been added to the project, along with commits being added which can be found via typing `git log -a` in the terminal.
-- [x] The project has not been published to any `GitHub` repo.
-- [x] Add the `README.md` file and write code documentation that could add value to it.
 
 ### Built With
 
