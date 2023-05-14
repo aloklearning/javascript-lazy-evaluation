@@ -10,7 +10,7 @@
 ### Built With
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming language Used to create this project
-- [Jest](https://jestjs.io/) - For Unit Test Cases
+- [Jest](https://jestjs.io/) - For Unit Test Cases.
 
 ### Pre-Requisites
 
