@@ -27,13 +27,13 @@
 
 - Output will be in a format of **Array of Integers** with the length of the `evaluate` argument array provided, which is below:
 
-```bash
-[ 3, 5, 7 ]
+```javascript
+[3, 5, 7];
 ```
 
 - For **successfull unit test cases** running, this will be the output:
 
-```bash
+```javascript
  PASS  main/evaluateLazy.test.js
   ...
 
@@ -46,7 +46,7 @@ Ran all test suites.
 
 - For **failure unit test cases**, this will be the output:
 
-```bash
+```javascript
 Lazy › returns a data when no argument is passed for inbuilt method
 
 ...
