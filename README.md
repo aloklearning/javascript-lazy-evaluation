@@ -4,7 +4,9 @@
 [![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![build](https://img.shields.io/appveyor/build/gruntjs/grunt)](https://pub.dev/packages/flutter_bounce#-analysis-tab-)
 
-- This coding challenge solves a very interesting algorithmic problem known as **Lazy Evaluation**.
+- This coding challenge solves a very interesting algorithmic problem known as **Lazy Evaluation**. It has two ways of solving the problems, one with **mutable instance**, and another with **immutable instance**. To know more, feel free to check the following code files:
+  - [Mutable Evaluate Lazy](https://github.com/aloklearning/javascript-lazy-evaluation/blob/master/main/evaluateLazy.js)
+  - [Immutable Evaluate Lazy](https://github.com/aloklearning/javascript-lazy-evaluation/blob/master/main/evaluateLazyImmute.js)
 - Lazy evaluation is an evaluation strategy which delays the evaluation of an expression until its value is needed.
 
 ### Built With
